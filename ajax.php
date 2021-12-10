@@ -27,26 +27,8 @@ else{
   echo "Out of loop!";
 }
 
-// if(isset($_POST['username'])){
-//   $sql = "select count(*) from wp_users where( user_login =' ".$_POST['username']."' and user_pass='".$_POST['password']."')";
-
-//   $result = mysqli_query("$conn,$sql");
-
-//   echo $result;
-  
-//   if(mysqli_num_rows($result)>0){
-//     $_SESSION['username']= $_POST['username'];
-//     echo 'Yes';
-//   }
-//   else{
-//     echo "No";
-//   }
-// }
-
 if(isset($_POST['action']))
 {
   unset($_SESSION["username"]);
 }
-
-
  ?>
